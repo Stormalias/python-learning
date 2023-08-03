@@ -18,7 +18,7 @@ accountID = random.sample(range(11111,55555), 10) # Account id values initialisa
 last_transaction = [[accountBal[i], 'No Prior Transaction'] for i in range(10)] #updated every transaction, starts current balance
 
 mainDict = dict(zip(accountID, accountBal)) # Dictionary matching account ID to account balances
-transactDict = dict(zip(accountID, last_transaction)) # Dictionary matchin account ID to last_transaction values
+transactDict = dict(zip(accountID, last_transaction)) # Dictionary matching account ID to last_transaction values
 ''' End of Section '''
 
 '''
@@ -75,7 +75,7 @@ def mainMenu():
     elif selection == 4:
         print("Goodbye!")
         time.sleep(1) # Flavour
-        exit() # Stops the programn to prevent any un intended errors, and quits
+        exit() # Stops the program to prevent any un intended errors, and quits
     else:
         print("Something went wrong you. You shouldn't be here")
         exceptReturn() # if somehow the exception handler doesn't catch something
